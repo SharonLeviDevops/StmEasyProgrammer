@@ -1,0 +1,1 @@
+pyinstaller --onefile --windowed --add-data "1.png;." --add-data "22.png;." --add-data "2.png;." --add-data "3.png;." --add-data "4.png;." --add-data "5.png;." --add-data "6.png;." --add-data "test.bat;." --add-data "original_file.bat;." main.py
