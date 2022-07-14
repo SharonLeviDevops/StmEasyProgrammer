@@ -9,13 +9,13 @@ from tkinter import messagebox
 from tkinter import *
 import subprocess, os
 
-path = [r"X:\\Software\\Eureka\\Version 2.1.0.2\\Slaves\\twine-winder-g743-master\\Debug\\twine-winder-g743-master.bin",
-        r"X:\\Software\\Eureka\\Version 2.1.0.2\\Slaves\\twine-midtank-g743-master\\Debug\\twine-midtank-g743-master.bin",
-        r"X:\\Software\\Eureka\\Version 2.1.0.2\\Slaves\\twine-lubricant-g743-master\\Debug\\twine-lubricant-g743-master.bin",
-        r"X:\\Software\\Eureka\\Version 2.1.0.2\\Slaves\\twine-head-g473-master\\Debug\\twine-head-g473-master.bin",
-        r"X:\\Software\\Eureka\\Version 2.1.0.2\\Slaves\\twine-emulator-g473-master\\Debug\\twine-emulator-g473-master.bin",
-        r"X:\\Software\\Eureka\\Version 2.1.0.2\\Slaves\\twine-dryer-g473-master\\Debug\\twine-dryer-g473-master",
-        r"X:\\Software\\Eureka\\Version 2.1.0.2\\Slaves\\twine-dispenser-g473-master\\Debug\\twine-dispenser-g473-master.bin"]
+path = [r"X:\\Software\\Eureka\\Version 2.2.0.3\\Slaves\\twine-winder-g743-master\\Debug\\twine-winder-g743-master.bin",
+        r"X:\\Software\\Eureka\\Version 2.2.0.3\\Slaves\\twine-midtank-g743-master\\Debug\\twine-midtank-g743-master.bin",
+        r"X:\\Software\\Eureka\\Version 2.2.0.3\\Slaves\\twine-lubricant-g743-master\\Debug\\twine-lubricant-g743-master.bin",
+        r"X:\\Software\\Eureka\\Version 2.2.0.3\\Slaves\\twine-head-g473-master\\Debug\\twine-head-g473-master.bin",
+        r"X:\\Software\\Eureka\\Version 2.2.0.3\\Slaves\\twine-emulator-g473-master\\Debug\\twine-emulator-g473-master.bin",
+        r"X:\\Software\\Eureka\\Version 2.2.0.3\\Slaves\\twine-dryer-g473-master\\Debug\\twine-dryer-g473-master",
+        r"X:\\Software\\Eureka\\Version 2.2.0.3\\Slaves\\twine-dispenser-g473-master\\Debug\\twine-dispenser-g473-master.bin"]
 def resource_path(relative_path):
     try:
         base_path = sys._MEIPASS
