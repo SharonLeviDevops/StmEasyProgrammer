@@ -1,2 +1,2 @@
 cls
-C:\"Program Files"\STMicroelectronics\STM32Cube\STM32CubeProgrammer\bin\STM32_Programmer_CLI.exe -c port=SWD mode=UR sn=002700264741500520383733 -e all --skipErase -d X:\Software\Eureka\Version 2.1.0.2\Slaves\twine-lubricant-g743-master\Debug\twine-lubricant-g743-master.bin 0x08000000 -Rst
+C:\"Program Files"\STMicroelectronics\STM32Cube\STM32CubeProgrammer\bin\STM32_Programmer_CLI.exe -c port=SWD mode=UR sn=002700264741500520383733 -e all --skipErase -d filepath 0x08000000 -Rst
