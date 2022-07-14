@@ -5,10 +5,10 @@ block_cipher = None
 
 
 a = Analysis(
-    ['main.py'],
+    ['C:/Stm32EasyProgrammer/main.py'],
     pathex=[],
     binaries=[],
-    datas=[('1.png', '.'), ('22.png', '.'), ('2.png', '.'), ('3.png', '.'), ('4.png', '.'), ('5.png', '.'), ('6.png', '.'), ('test.bat', '.'), ('original_file.bat', '.')],
+    datas=[('C:/Stm32EasyProgrammer/1.png', '.'), ('C:/Stm32EasyProgrammer/2.png', '.'), ('C:/Stm32EasyProgrammer/3.png', '.'), ('C:/Stm32EasyProgrammer/4.png', '.'), ('C:/Stm32EasyProgrammer/5.png', '.'), ('C:/Stm32EasyProgrammer/6.png', '.'), ('C:/Stm32EasyProgrammer/7.png', '.'), ('C:/Stm32EasyProgrammer/8.png', '.'), ('C:/Stm32EasyProgrammer/22.png', '.'), ('C:/Stm32EasyProgrammer/original_file.bat', '.'), ('C:/Stm32EasyProgrammer/test.bat', '.')],
     hiddenimports=[],
     hookspath=[],
     hooksconfig={},
@@ -41,4 +41,5 @@ exe = EXE(
     target_arch=None,
     codesign_identity=None,
     entitlements_file=None,
+    icon='C:\\Stm32EasyProgrammer\\icon.ico',
 )

@@ -1,28 +1,42 @@
-import sys
-from io import BytesIO
-from tkinter.ttk import Combobox
-import tkinter.font as tkFont
+import os
 import re
 import shutil
+import subprocess
+import sys
 import tkinter as tk
-from tkinter import messagebox
+import tkinter.font as tkFont
 from tkinter import *
-import subprocess, os
+from tkinter import messagebox, filedialog
 
-path = [r"X:\\Software\\Eureka\\Version 2.1.0.2\\Slaves\\twine-winder-g743-master\\Debug\\twine-winder-g743-master.bin",
-        r"X:\\Software\\Eureka\\Version 2.1.0.2\\Slaves\\twine-midtank-g743-master\\Debug\\twine-midtank-g743-master.bin",
-        r"X:\\Software\\Eureka\\Version 2.1.0.2\\Slaves\\twine-lubricant-g743-master\\Debug\\twine-lubricant-g743-master.bin",
-        r"X:\\Software\\Eureka\\Version 2.1.0.2\\Slaves\\twine-head-g473-master\\Debug\\twine-head-g473-master.bin",
-        r"X:\\Software\\Eureka\\Version 2.1.0.2\\Slaves\\twine-emulator-g473-master\\Debug\\twine-emulator-g473-master.bin",
-        r"X:\\Software\\Eureka\\Version 2.1.0.2\\Slaves\\twine-dryer-g473-master\\Debug\\twine-dryer-g473-master",
-        r"X:\\Software\\Eureka\\Version 2.1.0.2\\Slaves\\twine-dispenser-g473-master\\Debug\\twine-dispenser-g473-master.bin"]
+path = [r"X:\\Software\\Eureka\\Version 2.2.0.3\\Slaves\\twine-winder-g743-master\\Debug\\twine-winder-g743-master.bin",
+        r"X:\\Software\\Eureka\\Version 2.2.0.3\\Slaves\\twine-midtank-g743-master\\Debug\\twine-midtank-g743-master.bin",
+        r"X:\\Software\\Eureka\\Version 2.2.0.3\\Slaves\\twine-lubricant-g743-master\\Debug\\twine-lubricant-g743-master.bin",
+        r"X:\\Software\\Eureka\\Version 2.2.0.3\\Slaves\\twine-head-g473-master\\Debug\\twine-head-g473-master.bin",
+        r"X:\\Software\\Eureka\\Version 2.2.0.3\\Slaves\\twine-emulator-g473-master\\Debug\\twine-emulator-g473-master.bin",
+        r"X:\\Software\\Eureka\\Version 2.2.0.3\\Slaves\\twine-dryer-g473-master\\Debug\\twine-dryer-g473-master",
+        r"X:\\Software\\Eureka\\Version 2.2.0.3\\Slaves\\twine-dispenser-g473-master\\Debug\\twine-dispenser-g473-master.bin"]
+
 def resource_path(relative_path):
+    """ Get absolute path to resource, works for dev and for PyInstaller """
     try:
+        # PyInstaller creates a temp folder and stores path in _MEIPASS
         base_path = sys._MEIPASS
     except Exception:
         base_path = os.path.abspath(".")
 
     return os.path.join(base_path, relative_path)
+#It doesnt work yet
+def feature_fileexplorer():
+    folder_path = filedialog.askopenfilename()
+    print(folder_path)
+
+# def resource_path(relative_path):
+#     try:
+#         base_path = sys._MEIPASS
+#     except Exception:
+#         base_path = os.path.abspath(".")
+#
+#     return os.path.join(base_path, relative_path)
 
 # setting title
 ws = tk.Tk()
